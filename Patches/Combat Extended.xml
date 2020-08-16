@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Combat Extended</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="HalflingRace"]/statBases</xpath>
+          <value>
+            <li>
+              <Suppressability>0.5</Suppressability>
+            </li>
+          </value>
+        </li>
+
+        <!--<li Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ElfRace"]/statBases/</xpath>
+          <value>
+            <li>
+            </li>
+          </value>
+        </li>-->
+      </operations>
+    </match>
+    
+    <!--<nonmatch Class ="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ElfRace"]/statBases/</xpath>
+          <value>
+            <li>
+              
+            </li>
+          </value>
+        </li>
+      </operations>
+    </nonmatch>-->
+  </Operation>
+</Patch>

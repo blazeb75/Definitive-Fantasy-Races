@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ElfEye</defName>
+    <label>elf eye</label>
+    <labelNoun>an elf eye</labelNoun>
+    <description>What do your elf eyes see?</description>
+    <descriptionHyperlinks>
+      <ThingDef>ElfRace</ThingDef>
+    </descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+    <modExtensions>
+      <li Class="YORHG.HediffDefModExtension">
+        <race>ElfRace</race>
+        <conditionnalBodyPart>Eye</conditionnalBodyPart>
+        <!--<debug>true</debug>--> 
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+  <HediffGiverSetDef>
+    <defName>ElfRace_HediffGiverSet</defName>
+    <hediffGivers>
+      <!--<li Class="YORHG.YourOwnRace_HediffGiver">
+        <hediff>ElfEye</hediff>
+        <partsToAffect>
+          <li>Eye</li>
+        </partsToAffect>
+        <countToAffect>2</countToAffect>
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>-->
+      <li Class="HediffGiver_Birthday">
+        <hediff>ElfEye</hediff>
+        <partsToAffect>
+          <li>Eye</li>
+        </partsToAffect>
+        <countToAffect>2</countToAffect>
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+</Defs>

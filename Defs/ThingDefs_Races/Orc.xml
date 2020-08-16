@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+    <defName>OrcRace</defName>
+    <label>Orc</label>
+    <description>An orc. Orcs have green skin and typically hostile dispositions. They are strong and accustomed to violence, but ultimately fully capable of socialising with other races.</description>
+    <race>
+      <lifeExpectancy>70</lifeExpectancy>
+      <baseBodySize>1.1</baseBodySize>
+    </race>
+    <alienRace>
+      <generalSettings>
+        <allowHumanBios>true</allowHumanBios>
+        <humanRecipeImport>true</humanRecipeImport>
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>Undergrounder</defName>
+            <chance>25</chance>
+          </li>
+          <li>
+            <defName>Bloodlust</defName>
+            <chance>50</chance>
+          </li>
+          <li>
+            <defName>Brawler</defName>
+            <chance>30</chance>
+          </li>
+          <li>
+            <defName>Cannibal</defName>
+            <chance>15</chance>
+          </li>
+          <li>
+            <defName>Psychopath</defName>
+            <chance>10</chance>
+          </li>
+          <li>
+            <defName>Tough</defName>
+            <chance>10</chance>
+          </li>
+          <li>
+            <defName>NaturalMood</defName>
+            <degree>2</degree>
+            <chance>5</chance>
+          </li>
+          <li>
+            <defName>Industriousness</defName>
+            <degree>-1</degree>
+            <chance>10</chance>
+          </li>
+        </forcedRaceTraitEntries>
+        <alienPartGenerator>
+          <customDrawSize>1.1</customDrawSize>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.286, 0.349, 0.3, 1.000)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.416, 0.486, 0.376, 1.000)</only>
+                  </li>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(0.166, 0.459, 0.223, 1.000)</only>
+                  </li>
+                </options>
+              </first>
+              <second Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>RGBA(1.000, 0.000, 0.000, 1.000)</only>
+                  </li>
+                </options>
+              </second>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
+      </generalSettings>
+      <hairSettings>
+        <hasHair>true</hasHair>
+        <getsGreyAt>69420</getsGreyAt>
+        <hairTags>
+          <!--<li>Soldier</li>-->
+          <li>Punk</li>
+          <li>Tribal</li>
+        </hairTags>
+      </hairSettings>
+    </alienRace>
+    <statBases>
+      <MeleeHitChance>4</MeleeHitChance>
+      <!--<socialFightChanceFactor>2</socialFightChanceFactor>-->
+      <ConstructionSpeed>0.85</ConstructionSpeed>
+      <GeneralLaborSpeed>0.85</GeneralLaborSpeed>
+    </statBases>
+  </AlienRace.ThingDef_AlienRace>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="BaseFantasyPawnKind">
+    <defName>PlayerElf</defName>
+    <label>elf colonist</label>
+    <race>ElfRace</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseFantasyPawnKind">
+    <defName>PlayerDwarf</defName>
+    <label>dwarf colonist</label>
+    <race>DwarfRace</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseFantasyPawnKind">
+    <defName>PlayerOrc</defName>
+    <label>orc colonist</label>
+    <race>OrcRace</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseFantasyPawnKind">
+    <defName>PlayerHalfling</defName>
+    <label>halfling colonist</label>
+    <race>HalflingRace</race>
+  </PawnKindDef>
+
+  
+</Defs>

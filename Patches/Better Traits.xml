@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Better Traits</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ElfRace"]/alienRace/generalSettings/forcedRaceTraitEntries</xpath>
+          <value>
+            <li>
+              <defName>Rustic</defName>
+              <chance>40</chance>
+            </li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

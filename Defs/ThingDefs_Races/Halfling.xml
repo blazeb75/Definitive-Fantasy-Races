@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AlienRace.ThingDef_AlienRace ParentName="HumanRace">
+    <defName>HalflingRace</defName>
+    <label>Halfling</label>
+    <description>A halfling. Typically affable and cheerful folk, halflings have a natural ability to make any world feel like home.</description>
+    <race>
+      <lifeExpectancy>150</lifeExpectancy>
+      <baseBodySize>0.5</baseBodySize>
+    </race>
+    <alienRace>
+      <generalSettings>
+        <allowHumanBios>true</allowHumanBios>
+        <minAgeForAdulthood>20</minAgeForAdulthood>
+        <immuneToXenophobia>true</immuneToXenophobia>
+        <notXenophobistTowards>
+          <li>HumanRace</li>
+        </notXenophobistTowards>
+        <humanRecipeImport>true</humanRecipeImport>
+        <forcedRaceTraitEntries>
+          <li>
+            <defName>Kind</defName>
+            <chance>50</chance>
+          </li>
+          <li>
+            <defName>NaturalMood</defName>
+            <degree>1</degree>
+            <chance>30</chance>
+          </li>
+          <li>
+            <defName>Gourmand</defName>
+            <chance>10</chance>
+          </li>
+          <li>
+            <defName>Wimp</defName>
+            <chance>10</chance>
+          </li>
+          <li>
+            <defName>AnnoyingVoice</defName>
+            <chance>5</chance>
+          </li>
+        </forcedRaceTraitEntries>
+        <alienPartGenerator>
+          <customDrawSize>0.8, 0.6</customDrawSize>
+          <customHeadDrawSize>(1 , 0.9)</customHeadDrawSize>
+          <customPortraitDrawSize>0.8, 0.6</customPortraitDrawSize>
+          <customPortraitHeadDrawSize>(1.0 , 0.9)</customPortraitHeadDrawSize>
+          <headOffset>(0.00, -0.08)</headOffset>
+        </alienPartGenerator>
+      </generalSettings>
+      <hairSettings>
+        <hasHair>true</hasHair>
+        <getsGreyAt>100</getsGreyAt>
+        <hairTags>
+          <li>Rural</li>
+          <li>Urban</li>
+          <li>Soldier</li>
+        </hairTags>
+      </hairSettings>
+    </alienRace>
+    <statBases>
+      <MeleeDodgeChance>1.25</MeleeDodgeChance>
+      <PawnTrapSpringChance>0.5</PawnTrapSpringChance>
+      <PainShockThreshold>0.6</PainShockThreshold>
+      <PlantWorkSpeed>1.20</PlantWorkSpeed>
+      <CookSpeed>1.30</CookSpeed>
+    </statBases>
+  </AlienRace.ThingDef_AlienRace>
+</Defs>
